@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <title>Intelligent Garden</title>
+  <meta name="description" content="Bootstrap">
+  <meta name="keywords" content="Bootstrap">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+</head>
+
+<body class="text-center">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#login">Inicio</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#speakers">Contato</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#schedule">Cronograma</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#parceiros">Parceiros</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#register">Registrar</a>
+          </li>
+        </ul>
+        <a class="btn navbar-btn mx-2 text-white btn-outline-light" href="#suporte">Suporte</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover -->
+
+
+  <div class="d-flex align-items-center section-aquamarine py-5 cover" id="login" style="background-image: url(&quot;assets/conference/cover.jpg&quot;);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-white mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="mx-auto col-md-6 col-10 bg-white p-5" style="">
+                <img class="logo3" src="imgs/logo3.png">
+                  <form>
+                      <div class="form-group"> <input type="text" name="text2" size="20" class="form-control" placeholder="Informe seu e-mail"> </div>
+                        <div class="form-group mb-3"> <input type="password" name="text1" size="20" required class="form-control" placeholder="Password" > <small class="form-text text-muted text-right">
+                          <a href="#">Recuperar Senha</a>
+                        </small>
+                      </div>
+                  <input type="button" value="Entrar" name="Submit" onclick=javascript:validate(text2.value,"usuario@teste.com",text1.value,"123456") class="btn btn-lg mt-4 btn-outline-light">
+              </div>
+            </form>
+            <script language = "javascript">
+              function validate(text1,text2,text3,text4){
+                if (text1==text2 && text3==text4)
+                  load('controle.html');
+                  else{
+                    load('index.html');
+                  }
+                } function load(url)
+                { location.href=url;
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Parallax section -->
+  <div class="py-5 section-parallax" id="sobre" style="background-image: url(&quot;assets/conference/venue.jpg&quot;);">
+    <div class="container my-5 bg-light p-4">
+      <div class="row mx-auto">
+        <div class="col-md-12">
+          <h1 class="mb-3">Sobre</h1>
+          <p class="">Three days immersion in the world of UX/UI prototyping. Meet the most important design influencer of the moment, assist to speeches given by worldwide known designers and much, much more. The unique possibility to enhance your professionality with the smallest effort.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Speakers -->
+  <div class="py-5 bg-light" id="speakers">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contato</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-lg-4 animate-in-left">
+          <a href="https://www.linkedin.com/in/felipecaliel/">
+            <img src="assets/conference/people_1.png" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Felipe Caliel</b></h3>
+            <p class="text-muted"></p>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4 animate-in-right">
+          <a href="https://www.linkedin.com/in/nat%C3%A1lia-de-lima-silva-80b142188/">
+            <img src="assets/conference/people_2.jpeg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Natalia Lima</b></h3>
+            <p class="text-muted"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Schedule -->
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/schedule.jpg&quot;);" id="schedule">
+    <div class="container section-aquamarine">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-white mt-4">Cronograma</h1>
+        </div>
+      </div>
+      <div class="row text-left text-dark">
+        <div class="p-4 col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-block text-center card-primary p-2">
+              <h2>1-5 Dias</h2>
+              <p class="lead">Ao adquir o produto seguiremos um Cronograma com os horarios a serem seguidos:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;09:30-10:00 –&nbsp;<b>E-mail e Boas Vindas</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;10:00-12:00 –&nbsp;<b>Manuel de Utilização</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;12:00-13:00 –&nbsp;<b>Video Explicativo</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;13:00-14:30 –&nbsp;<b>Instalação do Modulo</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;14:30-16:00 –&nbsp;<b>Utilização na Pratica</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;16:00-18:00 –&nbsp;<b>Conclusão e Finalização</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-4 col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-block text-center card-primary p-2">
+              <h2>20-30 Dias</h2>
+              <p class="lead">Após o primeiro periodo é realizada uma pesquisa de qualidade e avaliação do produto:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;09:30-10:00 –&nbsp;<b>Retorno via E-mail</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;10:00-12:00 –&nbsp;<b>Avaliação e Pesquisa</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;12:00-13:00 –&nbsp;<b>Monitoramento Remoto</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;13:00-14:30 –&nbsp;<b>Testes dos Equipamentos </b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;14:30-16:00 –&nbsp;<b>Relatorio Final</b></li>
+              <li class="list-group-item"><i class="mx-auto fa d-inline fa-clock-o text-primary"></i>&nbsp;16:00-18:00 –&nbsp;<b>Conclusão da Pesquisa!</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sponsor logos -->
+  <div class="py-5 section bg-faded bg-light" id="parceiros">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4">Parceiros</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_1.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_4.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_3.png"> </div>
+        <div class="col-md-3 col-6">
+          <img class="center-block img-fluid d-block" src="assets/conference/logo_2.png"> </div>
+      </div>
+    </div>
+  </div>
+  <!-- Call to action -->
+  <div class="py-5 section-aquamarine" id="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <h1 class="text-white">Registro de novos usuarios</h1>
+          <p>Para realizar o registro é necessario solicitar o seu usuario e senha após a compra do produto e geração da pré-chave de ativação do "Intelligent Garden" com o seu representante comercial.&nbsp; <br>Caso ja possua seu usuario basta clicar no botão "Entrar" ao lado.</p>
+        </div>
+        <div class="col-md-4 align-self-center animate-in-right">
+          <a href="#" class="btn btn-lg btn-light my-3">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 section bg-faded bg-light" id="suporte">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <h1 class="text-white">Suporte e Atendimento ao Cliente</h1>
+          <p>Atendimento online para retiradas de dúvidas e suportee manutenção ao produto "Intelligent Garden".&nbsp; <br><br><h5>SUPORTE DISPONIVEL EM BREVE !!!</h5></p>
+        </div>
+        <div class="col-md-4 align-self-center animate-in-right">
+          <a href="#suporte" class="btn btn-lg btn-light mb-4">Suporte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-md-left text-center p-4 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="my-3 col-lg-40 col-md-6">
+          <h3>Intelligent Garden</h3>
+          <p class="my-3">
+            <a href="https://goo.gl/maps/ayn28vkB5F92" target="blank" class="text-muted">Endereço, XX <br>Limeira - São Paulo</a>
+          </p>
+          <a class="btn btn-lg btn-primary" href="#">Voltar ao Topo</a>
+        </div>
+        <div class="my-3 col-lg-40 col-md-6">
+          <h3>Contate por E-mail</h3>
+          <form>
+            <fieldset class="form-group my-3">
+              <input type="email" class="form-control" id="Input Email" placeholder="Email"> Informe o seu E-mail </fieldset>
+            <fieldset class="form-group my-3">
+              <input type="message" class="form-control" id="Input Message" placeholder="Message"> Digite sua mensagem</fieldset>
+            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="col-lg-1"> </div>
+        <div class="my-3 col-lg-3">
+          <h3>Redes Sociais</h3>
+          <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+          <a href="https://www.instagram.com" target="blank"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+          <a href="https://twitter.com" target="blank"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://plus.google.com" target="blank"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+          <a href="https://pinterest.com" target="blank"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+          <a href="https://www.youtube.com" target="blank"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">© Copyright 2020 Intelligent Garden - Todos os direitos reservados. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="js/smooth-scroll.js"></script>
+</body>
+
+</html>
